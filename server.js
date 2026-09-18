@@ -1,5 +1,5 @@
 // Express web server for CSE341-FALL2026
-// Import express using ESM syntax
+// Import the Express module
 const express = require('express');
 
 // Create an instance of an Express application
@@ -9,6 +9,7 @@ const app = express();
 // Define the port number the server will listen on
 const PORT = 3000;
 
+// Use the routes defined in the 'routes' directory for handling requests
 app.use('/', require('./routes'));
 
 // Start the server and listen on the specified port
