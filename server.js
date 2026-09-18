@@ -1,21 +1,14 @@
 // Express web server for CSE341-FALL2026
 // Import express using ESM syntax
-import express from 'express';
+const express = require('express');
 
 // Create an instance of an Express application
 const app = express();
+const lesson1Controllers = require('./controllers/lesson1.js').default;
 
 
-const name = process.env.NAME;
-
-// Define a route handler for the root URL ('/')
-app.get('/', (req, res) => {
-    res.send(name);
-});
-
-app.get('/hannah', (req, res) => {
-    res.send('Hannah Birch');
-});
+app.get('/', lesson1Controllers.emilyRoute);
+app.get('/hannah', lesson1Controllers.hannahRoute);
 
 
 // Define the port number the server will listen on
