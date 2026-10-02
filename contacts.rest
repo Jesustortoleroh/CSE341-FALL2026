@@ -58,27 +58,27 @@ DELETE http://localhost:3000/contacts/6abf2cb6f72db992d3659587
 ### ============================================
 
 ### Get all contacts (Render)
-GET https://cse341-fall2026-1.onrender.com/contacts
+GET https://cse341-fall2026.onrender.com/contacts
 
 ###
 
 ### Get Jesus Tortolero (Render)
-GET https://cse341-fall2026-1.onrender.com/contacts/6ab8a50faaec451496b3469b
+GET https://cse341-fall2026.onrender.com/contacts/6ab8a50faaec451496b3469b
 
 ###
 
 ### Get Onir Perdomo (Render)
-GET https://cse341-fall2026-1.onrender.com/contacts/6ab8a549aaec451496b3469d
+GET https://cse341-fall2026.onrender.com/contacts/6ab8a549aaec451496b3469d
 
 ###
 
 ### Get Jessica Morales (Render)
-GET https://cse341-fall2026-1.onrender.com/contacts/6abf2cb6f72db992d3659587
+GET https://cse341-fall2026.onrender.com/contacts/6abf2cb6f72db992d3659587
 
 ###
 
 ### Create a contact (Render)
-POST https://cse341-fall2026-1.onrender.com/contacts
+POST https://cse341-fall2026.onrender.com/contacts
 Content-Type: application/json
 
 {
@@ -92,7 +92,7 @@ Content-Type: application/json
 ###
 
 ### Update Onir Perdomo (Render) → Now is "Onir Martínez"
-PUT https://cse341-fall2026-1.onrender.com/contacts/6ab8a549aaec451496b3469d
+PUT https://cse341-fall2026.onrender.com/contacts/6ab8a549aaec451496b3469d
 Content-Type: application/json
 
 {
@@ -106,4 +106,4 @@ Content-Type: application/json
 ###
 
 ### Delete Onir Martínez (Render)
-DELETE https://cse341-fall2026-1.onrender.com/contacts/6ab8a549aaec451496b3469d
+DELETE https://cse341-fall2026.onrender.com/contacts/6ab8a549aaec451496b3469d
