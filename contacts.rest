@@ -22,7 +22,7 @@ GET http://localhost:3000/contacts/6ab8a55faaec451496b3469f
 
 ###
 
-### Create a contact (local)
+### Create a contact (local) 201
 POST http://localhost:3000/contacts
 Content-Type: application/json
 
@@ -36,7 +36,7 @@ Content-Type: application/json
 
 ###
 
-### Update Jessica Morales (local) → Now is "Jessica Fernández"
+### Update Jessica Morales (local) → Now is "Jessica Fernández" 204 
 PUT http://localhost:3000/contacts/6ab8a55faaec451496b3469f
 Content-Type: application/json
 
@@ -50,7 +50,7 @@ Content-Type: application/json
 
 ###
 
-### Delete Jessica Fernández (local)
+### Delete Jessica Fernández (local) 200
 DELETE http://localhost:3000/contacts/6ab8a55faaec451496b3469f
 
 ### ============================================
