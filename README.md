@@ -20,5 +20,5 @@ Test the endpoints in the `contacts.rest` file with Rest Client or another simil
 
 ## Live Demo
 
-https://cse341-fall2026-1.onrender.com/contacts
+https://cse341-fall2026.onrender.com/contacts
 
