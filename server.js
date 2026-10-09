@@ -3,6 +3,9 @@
 require('dotenv').config();
 
 const express = require('express');
+const cors = require('cors');                            
+const swaggerUi = require('swagger-ui-express');         
+const swaggerDocument = require('./swagger.json'); 
 const connectDB = require('./db/connect');
 
 const app = express();
@@ -10,7 +13,25 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware
+const corsOptions = {
+  origin: [
+    'http://localhost:3000',
+    'http://localhost:3001',
+    'http://localhost:5173',
+    'https://cse341-contacts-frontend.netlify.app',
+  ],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'apiKey'],
+  credentials: true,
+  optionsSuccessStatus: 200,
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
+
+
+// Swagger UI
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // Routes
 app.use('/', require('./routes'));
