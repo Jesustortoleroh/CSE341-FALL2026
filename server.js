@@ -29,7 +29,6 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 
-
 // Swagger UI
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
