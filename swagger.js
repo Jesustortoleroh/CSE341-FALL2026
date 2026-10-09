@@ -10,8 +10,8 @@ const doc = {
       name: 'Jesus Tortolero',
     },
   },
-  host: 'localhost:3000',
-  schemes: ['http', 'https'],
+  host: 'cse341-fall2026.onrender.com',
+  schemes: ['https'],
   definitions: {
     Contact: {
       firstName: 'John',
