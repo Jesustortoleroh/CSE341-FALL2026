@@ -8,10 +8,9 @@
       "name": "Jesus Tortolero"
     }
   },
-  "host": "localhost:3000",
+  "host": "cse341-fall2026.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
     "https"
   ],
   "paths": {
